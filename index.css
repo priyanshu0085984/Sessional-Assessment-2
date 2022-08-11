@@ -6,7 +6,7 @@ body{
 }
 nav{
     height: 5rem;
-    width: 99vw;
+    width: 98.7vw;
     display: flex;
     align-items: center;
     background-color: lightcoral;
@@ -36,4 +36,12 @@ header nav {
     position: absolute;
     top:4em;
     left: 30em;
+}
+footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    margin-top:2rem ;
 }
