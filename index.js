@@ -39,3 +39,17 @@ addEventListener("keydown",(e)=>{
     modal.style.display="none"
   }
 })
+
+document.getElementById("create").addEventListener("click",()=>{
+  const template = `
+                    <div class="card" style="width: 18rem;">
+                        <img src="${document.getElementById("ThumbnailUrl").value}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">${document.getElementById("title").value}</h5>
+                        <a href="#" class="btn btn-primary" onclick="showModal('${document.getElementById("url").value}')">View Image</a>
+                        </div>
+                    </div>
+                    `;
+
+  document.querySelector("#my-container").innerHTML += template;
+})
