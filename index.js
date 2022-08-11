@@ -16,7 +16,7 @@ xhr.onreadystatechange = () => {
                         <img src="${response[i].thumbnailUrl}" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">${response[i].title}</h5>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary" onclick="showModal('${response[i].url}')">View Image</a>
                         </div>
                     </div>
                     `;
@@ -26,3 +26,16 @@ xhr.onreadystatechange = () => {
 };
 
 xhr.send();
+
+const modal=document.getElementById("modal")
+function showModal(url){
+  modal.style.display="block"
+  modal.innerHTML=`<img src=${url} alt="Image">`
+  // console.log(url);
+}
+
+addEventListener("keydown",(e)=>{
+  if(e.key=="Escape"){
+    modal.style.display="none"
+  }
+})

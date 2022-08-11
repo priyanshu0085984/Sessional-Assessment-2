@@ -2,6 +2,7 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    position: relative;
 }
 nav{
     height: 5rem;
@@ -26,4 +27,13 @@ header nav {
     justify-content: space-evenly;
     margin: 2rem;
     padding-bottom: 5rem;
+}
+
+#modal{
+    display: none;
+    height:500px;
+    width: 500px;
+    position: absolute;
+    top:4em;
+    left: 30em;
 }
