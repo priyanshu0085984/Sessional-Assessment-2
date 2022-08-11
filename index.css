@@ -1,0 +1,29 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    height: 5rem;
+    width: 99vw;
+    display: flex;
+    align-items: center;
+    background-color: lightcoral;
+    justify-content: center;
+    font-size: 3rem;
+    color: black;
+
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#my-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2rem;
+    padding-bottom: 5rem;
+}
